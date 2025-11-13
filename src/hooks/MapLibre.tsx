@@ -30,7 +30,8 @@ const MapLibre = ({ state }: { state: geoObject }) => {
         
       mapInstance.current = new maplibregl.Map({
         container: mapContainer.current,
-        style: "https://demotiles.maplibre.org/style.json",
+        
+      style: 'https://tiles.openfreemap.org/styles/liberty',
         center: [state.longitude, state.latitude],
         zoom: 14,
       });
